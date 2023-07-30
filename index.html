@@ -4,10 +4,38 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app">hello world</div>
+    <div id="app">
+      <div class="container">
+        <div class="login">
+          <h1>welcome</h1>
+          <form action="#" class="form">
+            <!-- Email Input -->
+            <div class="input-group success">
+              <label for="email">UserMail</label>
+              <input type="text" id="email" name = 'email' placeholder="User Email ...">
+              <br>
+              <span class="message">Valid Email</span>
+            </div>
+            <!-- Password Input -->
+            <div id="password_group" class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name = "password" placeholder="User Password ...">
+              <span class="password_icon">
+                <i id="eye" class="fa-solid fa-eye"></i>
+                <i id="eye-slash" class="fa-solid fa-eye-slash"></i>
+              </span>
+              <span class="message" id="password_msg">Valid Password</span>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
